@@ -1,0 +1,2 @@
+# halaman readme
+# mindatama.com
