@@ -60,4 +60,32 @@ main() {
   angka2 = angka2 ?? 0;
   int hasilangka = angka1 + angka2;
   print("$angka1 + $angka2 = $hasilangka");
+
+  //swith case
+  var huruf = "B";
+  var komentar;
+  print('pilih A,B,C atau D. pilihan: $huruf');
+  switch (huruf) {
+    case "A":
+      {
+        komentar = "Sangat baik";
+        break;
+      }
+    case "B":
+      {
+        komentar = "Baik";
+        break;
+      }
+    case "C":
+      {
+        komentar = "Cukup";
+        break;
+      }
+    case "D":
+      {
+        komentar = "kurang";
+        break;
+      }
+  }
+  print(komentar);
 }
