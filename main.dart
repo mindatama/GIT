@@ -88,4 +88,6 @@ main() {
       }
   }
   print(komentar);
+
+  //for loop
 }
