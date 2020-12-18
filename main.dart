@@ -46,4 +46,18 @@ main() {
     grade = "E";
   }
   print("grade: $grade");
+
+  //conditional expression
+  print("condition expression, berapa hasil 1 + 1");
+  int hasilnya = 2;
+  print("hasil: $hasilnya");
+  var hasilce = hasilnya == 2 ? "benar!" : "salah";
+  print(hasilce);
+  // conditional expresion 2
+  int angka1 = 2;
+  int angka2 = 3;
+  angka1 = angka1 ?? 0;
+  angka2 = angka2 ?? 0;
+  int hasilangka = angka1 + angka2;
+  print("$angka1 + $angka2 = $hasilangka");
 }
