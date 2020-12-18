@@ -98,4 +98,11 @@ main() {
   for (var item2 in forloopangka) {
     print(item2);
   }
+
+  //while loop
+  int y = 2;
+  while (y < 5) {
+    print(y);
+    y++;
+  }
 }
