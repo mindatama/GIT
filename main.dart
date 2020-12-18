@@ -112,4 +112,18 @@ void main() {
     print(z);
     z++;
   } while (z <= 13);
+
+  //break
+  outerloop:
+  for (int k = 1; k <= 3; k++) {
+    innerloop:
+    for (int b = 111; b <= 112; b++) {
+      print("$k $b");
+
+      if (k == 2 && b == 112) {
+        break outerloop;
+        break innerloop;
+      }
+    }
+  }
 }
