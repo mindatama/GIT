@@ -90,4 +90,12 @@ main() {
   print(komentar);
 
   //for loop
+  for (int x = 1; x <= 3; x++) {
+    print(x);
+  }
+  //contoh2 for loop
+  List<String> forloopangka = ['list1', '2list', "li4st"];
+  for (var item2 in forloopangka) {
+    print(item2);
+  }
 }
