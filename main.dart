@@ -1,4 +1,4 @@
-main() {
+void main() {
   //print hello world versi indonesia
   print("indonesia");
   //variabel final
@@ -105,4 +105,11 @@ main() {
     print(y);
     y++;
   }
+
+  //do while
+  int z = 11;
+  do {
+    print(z);
+    z++;
+  } while (z <= 13);
 }
