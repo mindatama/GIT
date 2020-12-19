@@ -132,4 +132,12 @@ void main() {
       }
     }
   }
+
+  //continue
+  for (int g = 1001; g <= 1003; g++) {
+    if (g == 1002) {
+      continue;
+    }
+    print(g);
+  }
 }
