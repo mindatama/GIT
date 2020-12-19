@@ -140,4 +140,16 @@ void main() {
     }
     print(g);
   }
+
+  //continue dua
+  outerloop:
+  for (int c = 1; c <= 3; c++) {
+    innerloop:
+    for (int d = 111; d <= 112; d++) {
+      if (c == 2 && d == 112) {
+        break outerloop;
+      }
+      print("$c $d");
+    }
+  }
 }
