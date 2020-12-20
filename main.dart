@@ -152,17 +152,26 @@ void main() {
       print("$c $d");
     }
   }
+  hello();
+  cariluas(3, 5);
+  carikl(2, 5);
+}
 
-//nyoba return
-  String mycompany() {
-    return "niomic";
-  }
+//contoh fungsi hello yang dimunculkan di fungsi main
+void hello() {
+  print("hellow");
+}
 
-  print("$mycompany");
+//contoh fungcion or metode cari luas
+void cariluas(int pj, int lb) {
+  int luas = pj * lb;
+  print("luas: $luas");
+}
 
-//contoh void
-  void hello() {
-    print("hellow");
-  }
-  //fungcion or metode
+//contoh cari keliling
+int carikl(int pj, int lb) {
+  int keli = 2 * (pj + lb);
+
+  print("keliling $keli");
+  return keli;
 }
