@@ -152,4 +152,17 @@ void main() {
       print("$c $d");
     }
   }
+
+//nyoba return
+  String mycompany() {
+    return "niomic";
+  }
+
+  print("$mycompany");
+
+//contoh void
+  void hello() {
+    print("hellow");
+  }
+  //fungcion or metode
 }
