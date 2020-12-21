@@ -157,6 +157,7 @@ void main() {
   carikl(2, 5);
   volume(3);
   print(volbalok(3, 2, 3));
+  kota("plat H", "plat AD");
 }
 
 //contoh fungsi hello yang dimunculkan di fungsi main
@@ -180,3 +181,10 @@ int carikl(int pj, int lb) {
 void volume(int pj) => print("volume kubus: ${pj * pj * pj}");
 
 String volbalok(int pj, int lb, int ti) => "volume balok: ${pj * lb * ti}";
+
+//positional parameters pada contoh kota 3, tidak diisi maka akan tampil null
+void kota(String kota1, String kota2, [String? kota3]) {
+  print("kota satu: $kota1");
+  print("kota dua: $kota2");
+  print("kota tiga: $kota3");
+}
