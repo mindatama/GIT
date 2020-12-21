@@ -156,7 +156,7 @@ void main() {
   cariluas(3, 5);
   carikl(2, 5);
   volume(3);
-  print(volbalok(1, 2, 3));
+  print(volbalok(3, 2, 3));
 }
 
 //contoh fungsi hello yang dimunculkan di fungsi main
@@ -167,16 +167,16 @@ void hello() {
 //contoh fungcion or metode cari luas
 void cariluas(int pj, int lb) {
   int luas = pj * lb;
-  print("luas: $luas");
+  print("luas persegi: $luas");
 }
 
 //contoh cari keliling
 int carikl(int pj, int lb) {
   int keli = 2 * (pj + lb);
-  print("keliling $keli");
+  print("keliling persegi $keli");
   return keli;
 }
 
-void volume(int pj) => print("vol: ${pj * pj * pj}");
+void volume(int pj) => print("volume kubus: ${pj * pj * pj}");
 
-String volbalok(int pj, int lb, int ti) => "${pj * lb * ti}";
+String volbalok(int pj, int lb, int ti) => "volume balok: ${pj * lb * ti}";
