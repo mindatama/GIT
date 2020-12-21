@@ -155,6 +155,8 @@ void main() {
   hello();
   cariluas(3, 5);
   carikl(2, 5);
+  volume(3);
+  print(volbalok(1, 2, 3));
 }
 
 //contoh fungsi hello yang dimunculkan di fungsi main
@@ -171,7 +173,10 @@ void cariluas(int pj, int lb) {
 //contoh cari keliling
 int carikl(int pj, int lb) {
   int keli = 2 * (pj + lb);
-
   print("keliling $keli");
   return keli;
 }
+
+void volume(int pj) => print("vol: ${pj * pj * pj}");
+
+String volbalok(int pj, int lb, int ti) => "${pj * lb * ti}";
