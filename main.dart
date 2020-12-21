@@ -158,6 +158,7 @@ void main() {
   volume(3);
   print(volbalok(3, 2, 3));
   kota("plat H", "plat AD");
+  vol(2, lebar: 4, tinggi: 5);
 }
 
 //contoh fungsi hello yang dimunculkan di fungsi main
@@ -187,4 +188,9 @@ void kota(String kota1, String kota2, [String? kota3]) {
   print("kota satu: $kota1");
   print("kota dua: $kota2");
   print("kota tiga: $kota3");
+}
+
+//contoh named parameters
+void vol(int panjang, {required int lebar, required int tinggi}) {
+  print("volumenya: ${panjang * lebar * tinggi}");
 }
