@@ -16,8 +16,27 @@ void main() {
   } finally {
     print("bagian selalu dieksekusi");
   }
+
+  print("\ncontoh custom exception class");
+  try {
+    inpt(-10);
+  } catch (err) {
+    print(err.errorMessage());
+  }
 }
 
 void luas(int panjang, int lebar) {
   print("luas: ${panjang ~/ lebar}");
+}
+
+class depo implements Exception {
+  String errorMessage() {
+    return "tidak boleh minus";
+  }
+}
+
+void inpt(int uang) {
+  if (uang < 0) {
+    throw new depo();
+  }
 }
