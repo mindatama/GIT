@@ -9,7 +9,10 @@ void main() {
   try {
     int hasil = 12 ~/ 0;
     print("hasilnya: $hasil");
-  } catch (aneh) {
+  } catch (aneh, s) {
     print("errornya: $aneh");
+    print("stack trace \n $s");
+  } finally {
+    print("bagian selalu dieksekusi");
   }
 }
