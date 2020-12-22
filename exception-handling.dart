@@ -21,7 +21,7 @@ void main() {
   try {
     inpt(-10);
   } catch (err) {
-    print(err.errorMessage());
+    // print(err.errorMessage()); dikomen karena error
   }
 }
 
