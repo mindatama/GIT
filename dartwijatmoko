@@ -1,5 +1,0 @@
-void main(){
-var hehe = "semangat pagi";
-  var haha = 'hallo dunia,\' saya wijatmoko. $hehe';
-  print(haha);
-}
