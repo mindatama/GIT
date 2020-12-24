@@ -185,14 +185,14 @@ void volume(int pj) => print("volume kubus: ${pj * pj * pj}");
 String volbalok(int pj, int lb, int ti) => "volume balok: ${pj * lb * ti}";
 
 //positional parameters pada contoh kota 3, tidak diisi maka akan tampil null
-void kota(String kota1, String kota2, [String? kota3]) {
+void kota(String kota1, String kota2, [String kota3]) {
   print("kota satu: $kota1");
   print("kota dua: $kota2");
   print("kota tiga: $kota3");
 }
 
 //contoh named parameters di lebar dan tinggi
-void vol(int panjang, {required int lebar, required int tinggi}) {
+void vol(int panjang, {int lebar, int tinggi}) {
   print("volumenya: ${panjang * lebar * tinggi}");
 }
 
