@@ -21,8 +21,9 @@ void main() {
   try {
     inpt(-10);
   } catch (err) {
-    // print(err.errorMessage()); dikomen karena error
+    print(err.errorMessage());
   }
+  print("setelah install ulang os, move ke w10");
 }
 
 void luas(int panjang, int lebar) {
