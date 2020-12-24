@@ -8,7 +8,7 @@
             "name": "Dart",
             "type": "dart",
             "request": "launch",
-            "program": "exception-handling.dart"
+            "program": "mainclass.dart"
         }
     ]
 }
