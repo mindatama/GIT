@@ -1,10 +1,30 @@
 void main() {
   var kaki_empat = kucing.tambahinnamedconstruct('vira', 'tomboy');
   kaki_empat.umur = 27;
-  print('${kaki_empat.nama} ${kaki_empat.gender} umur ${kaki_empat.getumur}');
+  kaki_empat.jumlahkaki = 4;
+  print('${kaki_empat.nama} kakinya ${kaki_empat.jumlahkaki}');
+
+  var dara = burung();
+  dara.hidup();
+  dara.sifat = 'ngoceh';
+  dara.jumlahkaki = 2;
+  print('${dara.sifat} kakinya ${dara.jumlahkaki}');
 }
 
-class kucing {
+class hewan {
+  int jumlahkaki;
+
+  void hidup() {
+    print('nafas terus');
+  }
+}
+
+class burung extends hewan {
+  String suara;
+  String sifat;
+}
+
+class kucing extends hewan {
   String nama;
   String gender;
   int umur;
