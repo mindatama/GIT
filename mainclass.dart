@@ -4,12 +4,15 @@ void main() {
   mahasiswa1.belajar();
   mahasiswa1.kerja();
 
-  var mahasiswa2 = murid(10023555, 'dewi');
-  // mahasiswa2.nik = 10023555;
-  // mahasiswa2.nama = 'dewi chariratul latifah';
+  var mahasiswa2 = murid.customconstruktor();
+  mahasiswa2.nik = 10023555;
+  mahasiswa2.nama = 'dewi chariratul latifah';
   print("${mahasiswa2.nama} ${mahasiswa2.nik}");
-  mahasiswa2.kerja();
-  mahasiswa2.belajar();
+
+  var mahasiswa3 = murid.customconstruktorlain(10023333, 'nadia kusuma');
+  {
+    print('${mahasiswa3.nama} ${mahasiswa3.nik}');
+  }
 }
 
 class murid {
@@ -28,12 +31,12 @@ class murid {
 //parameter construktor lebih ringkas
   murid(this.nik, this.nama);
 
-// // named constructor
-//   murid.customconstruktor() {
-//     print('custom construct');
-//   }
-// // named constructor lainnya
-//   murid.customconstruktorlain(this.nik, this.nama);
+// named constructor
+  murid.customconstruktor() {
+    print('named construct');
+  }
+// named constructor lainnya
+  murid.customconstruktorlain(this.nik, this.nama);
 
   void belajar() {
     print('${this.nama} sedang belajar');
