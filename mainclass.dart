@@ -20,12 +20,21 @@ class murid {
 //   murid() {
 //     print('default constructor');
 //   }
-
 //   parameter constructor
-  murid(int nik, String nama) {
-    this.nik = nik;
-    this.nama = nama;
-  }
+  // murid(int nik, String nama) {
+  //   this.nik = nik;
+  //   this.nama = nama;
+  // }
+//parameter construktor lebih ringkas
+  murid(this.nik, this.nama);
+
+// // named constructor
+//   murid.customconstruktor() {
+//     print('custom construct');
+//   }
+// // named constructor lainnya
+//   murid.customconstruktorlain(this.nik, this.nama);
+
   void belajar() {
     print('${this.nama} sedang belajar');
   }
