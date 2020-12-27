@@ -15,4 +15,8 @@ class hewan {
 
 class kucing extends hewan {
   String jenis;
+  void hidup() {
+    super.hidup();
+    print('kucing hewan bernyawa');
+  }
 }
