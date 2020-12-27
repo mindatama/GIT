@@ -9,7 +9,7 @@ void main() {
 class hewan {
   int umur;
   void hidup() {
-    print('bernafas');
+    print('hewan bernafas');
   }
 }
 
