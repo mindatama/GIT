@@ -1,7 +1,7 @@
 void main() {
   var anggora = kucing();
   anggora.hidup();
-  anggora.umur = 10;
+  anggora.umur = 12;
   anggora.jenis = 'anggora';
   print('${anggora.jenis} umurnya ${anggora.umur}');
 }
