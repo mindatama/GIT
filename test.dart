@@ -3,7 +3,7 @@ void main() {
   anggora.hidup();
   anggora.umur = 12;
   anggora.jenis = 'anggora jinak';
-  print('${anggora.jenis} umurnya ${anggora.umur}');
+  print('${anggora.jenis} umurnya adalah ${anggora.umur}');
 }
 
 class hewan {
