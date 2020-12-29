@@ -1,9 +1,9 @@
 void main() {
   var anggora = kucing();
   anggora.hidup();
-  anggora.umur = 12;
-  anggora.jenis = 'anggora jinak';
-  print('${anggora.jenis} umurnya adalah ${anggora.umur} tahun');
+  // anggora.umur = 12;
+  // anggora.jenis = 'anggora jinak';
+  // print('${anggora.jenis} umurnya adalah ${anggora.umur} tahun');
 }
 
 class hewan {
