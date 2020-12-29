@@ -4,6 +4,9 @@ void main() {
   // anggora.umur = 12;
   // anggora.jenis = 'anggora jinak';
   // print('${anggora.jenis} umurnya adalah ${anggora.umur} tahun');
+
+  var mawarmerah = mawar();
+  mawarmerah.bergerak();
 }
 
 class hewan {
@@ -26,5 +29,17 @@ class kucing extends hewan {
   void hidup() {
     super.hidup();
     print('kucing hewan bernyawa');
+  }
+}
+
+//contoh abstract class& abstract method
+
+abstract class tumbuhan {
+  void bergerak();
+}
+
+class mawar extends tumbuhan {
+  void bergerak() {
+    print("menghadap matahari");
   }
 }
