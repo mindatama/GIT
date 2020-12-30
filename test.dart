@@ -1,9 +1,9 @@
 void main() {
   var anggora = kucing.namedconstruct("hijau");
   anggora.hidup();
-  // anggora.umur = 12;
-  // anggora.jenis = 'anggora jinak';
-  // print('${anggora.jenis} umurnya adalah ${anggora.umur} tahun');
+  hewan.umur = 12;
+  anggora.jenis = 'anggora jinak';
+  print('${anggora.jenis} umurnya adalah ${hewan.umur} tahun');
 
   var mawarmerah = mawar();
   mawarmerah.bergerak();
@@ -15,7 +15,7 @@ void main() {
 
 class hewan {
   String warna;
-  int umur;
+  static int umur;
   void hidup() {
     print('hewan darat bernafas dengan paru paru');
   }
