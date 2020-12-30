@@ -7,6 +7,10 @@ void main() {
 
   var mawarmerah = mawar();
   mawarmerah.bergerak();
+
+  var butuh = kebutuhan();
+  butuh.mesin();
+  butuh.water();
 }
 
 class hewan {
@@ -41,5 +45,29 @@ abstract class tumbuhan {
 class mawar extends tumbuhan {
   void bergerak() {
     print("menghadap matahari");
+  }
+}
+
+//contoh interface
+
+class nature {
+  void water() {
+    print("air bersih");
+  }
+}
+
+class industry {
+  void mesin() {
+    print("AI");
+  }
+}
+
+class kebutuhan implements nature, industry {
+  void water() {
+    print("air konsumsi");
+  }
+
+  void mesin() {
+    print("tensorflow");
   }
 }
