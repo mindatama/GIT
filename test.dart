@@ -28,6 +28,14 @@ void main() {
 
   Function mul = (int nu) => nu * 3;
   print(mul(12));
+
+  //higher order function
+  Function aT = (o, p) => print("Funct ${o}+${p} = ${o + p}");
+  F1("pesan", aT);
+
+  //high order function
+  var fuct2 = F2();
+  print(fuct2(10));
 }
 
 class hewan {
@@ -87,4 +95,16 @@ class kebutuhan implements nature, industry {
   void mesin() {
     print("tensorflow");
   }
+}
+
+//contoh higher order: terima fungsi sbg parameter
+void F1(String message, Function myF) {
+  print("pesan: ${message}");
+  myF(2, 13);
+}
+
+//contoh higher order: kembalikan fungsi
+Function F2() {
+  Function kalilima = (int numb) => numb * 5;
+  return kalilima;
 }
