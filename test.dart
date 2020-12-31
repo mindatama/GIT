@@ -36,6 +36,27 @@ void main() {
   //high order function
   var fuct2 = F2();
   print(fuct2(10));
+
+  //contoh closures
+  String po = "dart test";
+  Function showpo = () {
+    po = "dart output";
+    print(po);
+  };
+  showpo();
+
+  //contoh closures akses var sendiri
+  Function ma = () {
+    String la = "balikpapan";
+
+    Function mi = () {
+      la = "semarang";
+      print(la);
+    };
+    return mi;
+  };
+  var ga = ma();
+  ga();
 }
 
 class hewan {
