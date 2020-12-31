@@ -57,6 +57,31 @@ void main() {
   };
   var ga = ma();
   ga();
+
+  //contoh list lenghs
+  List<int> numberlist = List(5);
+  //insert operation (tambah 5buah data)
+  numberlist[0] = 12;
+  numberlist[1] = 22;
+  numberlist[2] = 32;
+  numberlist[3] = 42;
+  numberlist[4] = 52;
+//update nyoba list
+  numberlist[0] = 102;
+  //delete list
+  numberlist[4] = null;
+  print(numberlist);
+  print(numberlist[2]);
+//perulangan list pakai for in
+  for (int element in numberlist) {
+    print(element);
+//perulangan pakai for each
+    numberlist.forEach((element) => print(element));
+//perulangan pakai for lenght
+    for (int i = 0; i < numberlist.length; i++) {
+      print(numberlist[i]);
+    }
+  }
 }
 
 class hewan {
