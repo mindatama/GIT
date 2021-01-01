@@ -78,13 +78,15 @@ void main() {
 //perulangan list pakai for in
   for (int element in numberlist) {
     print(element);
-    print("\n");
+  }
+  print("\n");
+
 //perulangan pakai for each
-    numberlist.forEach((element) => print(element));
+  numberlist.forEach((element) => print(element));
+  print("\n");
 //perulangan pakai for lenght
-    for (int i = 0; i < numberlist.length; i++) {
-      print(numberlist[i]);
-    }
+  for (int i = 0; i < numberlist.length; i++) {
+    print(numberlist[i]);
   }
 }
 
