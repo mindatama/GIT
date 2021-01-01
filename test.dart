@@ -67,14 +67,18 @@ void main() {
   numberlist[3] = 42;
   numberlist[4] = 52;
 //update nyoba list
-  numberlist[0] = 102;
+  numberlist[0] = 102102102102;
+  print("\n");
   //delete list
   numberlist[4] = null;
   print(numberlist);
+  print("\n");
   print(numberlist[2]);
+  print("\n");
 //perulangan list pakai for in
   for (int element in numberlist) {
     print(element);
+    print("\n");
 //perulangan pakai for each
     numberlist.forEach((element) => print(element));
 //perulangan pakai for lenght
