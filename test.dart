@@ -96,6 +96,21 @@ void main() {
   numberlistgrow.add(32);
   numberlistgrow.remove(32);
   print(numberlistgrow);
+
+//contoh set
+  Set<String> negara = Set.from(["IDR", "USD", "EUR"]);
+  for (String elem in negara) {
+    print(elem);
+  }
+
+  //contoh set cara lain
+  Set<int> numberes = new Set();
+  numberes.add(20);
+  numberes.add(21);
+  numberes.add(22);
+  for (int elem in numberes) {
+    print(elem);
+  }
 }
 
 class hewan {
