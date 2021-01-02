@@ -88,6 +88,14 @@ void main() {
   for (int i = 0; i < numberlist.length; i++) {
     print(numberlist[i]);
   }
+
+//contoh list growable
+  List<int> numberlistgrow = List();
+  numberlistgrow.add(12);
+  numberlistgrow.add(22);
+  numberlistgrow.add(32);
+  numberlistgrow.remove(32);
+  print(numberlistgrow);
 }
 
 class hewan {
