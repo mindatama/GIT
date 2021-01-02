@@ -119,6 +119,11 @@ void main() {
   buah[2] = 'jeruk2';
   print(buah[0]);
   print(buah);
+
+//contoh callable class
+  var orang1 = orang();
+  var perin = orang1(55, 164);
+  print(perin);
 }
 
 class hewan {
@@ -190,4 +195,11 @@ void F1(String message, Function myF) {
 Function F2() {
   Function kalilima = (int numb) => numb * 5;
   return kalilima;
+}
+
+//contoh kelas callable
+class orang {
+  String call(int berat, int duwur) {
+    return 'Berat dia ${berat} dan duwure $duwur';
+  }
 }
