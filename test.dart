@@ -111,6 +111,14 @@ void main() {
   for (int elem in numberes) {
     print(elem);
   }
+
+  Map<int, String> buah = new Map();
+
+  buah[0] = 'jeruk';
+  buah[1] = 'jeruk1';
+  buah[2] = 'jeruk2';
+  print(buah[0]);
+  print(buah);
 }
 
 class hewan {
