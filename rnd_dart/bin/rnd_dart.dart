@@ -1,8 +1,8 @@
 import 'dart:io';
 
-main(List<String> arguments) {
-  String input = stdin.readLineSync();
+void main(List<String> arguments) {
+  var input = stdin.readLineSync();
   // print(hehe);
-  int haha = int.tryParse(input);
-  print(haha + 9);
+  var number = int.tryParse(input);
+  print(number + 9);
 }
