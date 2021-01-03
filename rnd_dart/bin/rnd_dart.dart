@@ -1,5 +1,8 @@
-import 'package:rnd_dart/rnd_dart.dart' as rnd_dart;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${rnd_dart.calculate()}!');
+main(List<String> arguments) {
+  String input = stdin.readLineSync();
+  // print(hehe);
+  int haha = int.tryParse(input);
+  print(haha + 9);
 }
