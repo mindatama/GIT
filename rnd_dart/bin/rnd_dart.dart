@@ -1,8 +1,13 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  var input = stdin.readLineSync();
-  // print(hehe);
-  int number = int.tryParse(input);
-  print("${number} semarangku selamat");
+  int number = int.tryParse(stdin.readLineSync());
+
+  if(number > 0) {
+    print('positip');
+  } else if(number < 0) {
+    print('negatip');
+  } else {
+    print('nol');
+  }
 }
