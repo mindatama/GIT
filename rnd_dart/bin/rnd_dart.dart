@@ -13,11 +13,16 @@ void main(List<String> arguments) {
   // }
 
   //contoh lain if
-  String output;
-  if (number > 0){
-    output = 'positip';
-  } else {
-    output = 'negatip atau nol';
-  }
-  print(output);
+  // String output;
+  // if (number > 0){
+  //   output = 'positip';
+  // } else {
+  //   output = 'negatip atau nol';
+  // }
+  // print(output);
+
+  //contoh lain percabangan sederhana
+  String out;
+  out = (number > 0) ? "positif" : "negatif atau nol";
+      print(out);
 }
