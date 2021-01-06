@@ -1,26 +1,42 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-persegi kotak1, kotak2;
-int luaskotak;
+segitiga gambar1, gambar2;
+persegi gambar3;
+double luasgambar1;
+double luasgambar2;
+int luasgambar3;
 
-kotak1 = persegi();
-kotak1.panjang = 3;
-kotak1.lebar = 5;
-luaskotak = kotak1.luas();
+gambar1 = segitiga();
+gambar1.pj = 11;
+gambar1.tinggi = 2;
+luasgambar1 = gambar1.luassegitiga();
 
-kotak2 = persegi();
-kotak2.panjang = int.tryParse(stdin.readLineSync());
-kotak2.lebar = int.tryParse(stdin.readLineSync());
+gambar2 = segitiga();
+gambar2.pj = int.tryParse(stdin.readLineSync());
+gambar2.tinggi = double.tryParse(stdin.readLineSync());
+luasgambar2 = gambar2.luassegitiga();
 
-print(luaskotak +kotak2.luas());
+gambar3 = persegi();
+gambar3.pj = int.tryParse(stdin.readLineSync());
+luasgambar3 = gambar3.luaspersegi();
+
+print("${luasgambar1} ${luasgambar2} ${luasgambar3}");
+}
+
+class segitiga {
+  int pj;
+  double tinggi;
+
+  double luassegitiga(){
+    return this.pj * this.tinggi * 0.5;
+  }
 }
 
 class persegi {
-  int panjang;
-  int lebar;
+  int pj;
 
-  int luas(){
-    return this.panjang * this.lebar;
+  int luaspersegi(){
+    return this.pj * this.pj;
   }
 }
