@@ -1,9 +1,15 @@
 import 'dart:io';
 
-int luas(int p, int l, Function(int, int) operator) {
- return operator(p,l);
-}
-
 void main(List<String> arguments) {
-  print(luas(4, 4, (a, b) => a * b));
+  List<int> liss = [1, 2, 3];
+  int nol = liss [0];
+  print("${nol} \n");
+
+  for (int idx = 0; idx < liss.length; idx += 1) {
+    print(liss[idx]);
+  }
+  print("\n");
+  for(int bil in liss){
+    print(bil);
+  }
 }
