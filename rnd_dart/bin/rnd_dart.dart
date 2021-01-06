@@ -1,9 +1,9 @@
 import 'dart:io';
 
-int luas(int p, int l) => p * l;
+int luas(int p, int l, Function(int, int) operator) {
+ return operator(p,l);
+}
 
 void main(List<String> arguments) {
-Function F;
-F = luas;
-  print(F(2,2));
+  print(luas(4, 4, (a, b) => a * b));
 }
