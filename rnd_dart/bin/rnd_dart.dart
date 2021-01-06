@@ -1,15 +1,16 @@
 import 'dart:io';
 
-double luas_segiempat(double panjang, double lebar) {
-  double hasil;
-  return panjang * lebar;;
+String saynamedparameter(String from, String message, {String to, String app}){
+return from + " say " + message + ((to != null ) ? " to " + to : "") + ((app != null ) ? " via app " + app : "");
+}
+String saypositionalparameter(String from, String message, [String to, String app]){
+  return from + " say " + message + ((to != null ) ? " to " + to : "") + ((app != null ) ? " via app " + app : "");
 }
 
-void main(List<String> arguments) {
-double p,l,t, luas;
-p = double.tryParse(stdin.readLineSync());
-l = double.tryParse(stdin.readLineSync());
-t = double.tryParse(stdin.readLineSync());
+//named masukkan bisa tidak urut tapi harus kasih namenya, spt: app
+//positional masukkan harus urut tapi langsung bisa isinya, "nadia"
 
-print(luas_segiempat(p, l));
+void main(List<String> arguments) {
+print(saynamedparameter("wijat", "hay", app: "telegram"));
+print(saypositionalparameter("koko", "pagi", "nadia"));
 }
