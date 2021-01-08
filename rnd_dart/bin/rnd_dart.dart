@@ -23,5 +23,6 @@ gambar3.pj = int.tryParse(stdin.readLineSync());
 luasgambar3 = gambar3.luaspersegi();
 
 print('${luasgambar1} ${luasgambar2} ${luasgambar3}');
-print(gambar1.getpj());
+print(gambar2.getpj());
+print(gambar2.tinggi);
 }
