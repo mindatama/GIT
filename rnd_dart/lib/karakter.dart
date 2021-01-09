@@ -7,7 +7,7 @@ class karakter {
   set darah(int val){
     _darah;
     if(val < 0) {
-val *= -1;
+val =1;
     }
     _darah = val;
   }
