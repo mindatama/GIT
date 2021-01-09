@@ -1,5 +1,6 @@
 // import 'dart:io';
 
+import 'package:rnd_dart/drink_ability.dart';
 import 'package:rnd_dart/flying_monster.dart';
 import 'package:rnd_dart/hero.dart';
 import 'package:rnd_dart/monster.dart';
@@ -33,8 +34,8 @@ monsters.add(monster_ucoa());
 
 
 for (monster m in monsters) {
-  if (m is flying_monster) {
-    print((m as flying_monster).fly());
+  if (m is drink_ability) {
+    print((m as drink_ability).drink());
   }
 }
 print('\n');
