@@ -1,5 +1,6 @@
-import 'package:construct_demo/construct_demo.dart' as construct_demo;
+import 'dart:io';
 
 void main(List<String> arguments) {
-  print('Hello world: ${construct_demo.calculate()}!');
+  var input = stdin.readLineSync();
+  print('hasil input = ' + input.toString());
 }
