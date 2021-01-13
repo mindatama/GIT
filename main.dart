@@ -198,5 +198,5 @@ void vol(int panjang, {int lebar, int tinggi}) {
 
 //default parameter pada lebar
 void luasdefault(int pjng, {double lbr: 5.5}) {
-  print("luasnya adalah ${pjng * lbr}");
+  print("luas bangun ini adalah ${pjng * lbr}");
 }
