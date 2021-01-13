@@ -200,3 +200,5 @@ void vol(int panjang, {int lebar, int tinggi}) {
 void luasdefault(int pjng, {double lbr: 5.5}) {
   print("luas bangun ini adalah ${pjng * lbr}");
 }
+
+//tambah komen supaya ada kontribusi ke github
