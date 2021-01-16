@@ -1,6 +1,6 @@
 class person {
   String name;
   person() {
-    print('NIK person: 10023543');
+    print('NIK person adalah: 10023543');
   }
 }
