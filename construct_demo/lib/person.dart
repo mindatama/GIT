@@ -1,6 +1,7 @@
 class person {
   String name;
-  person() {
-    print('NIK person: 10023543');
+
+  person({String name = 'no name'}) {
+    this.name = name;
   }
 }
