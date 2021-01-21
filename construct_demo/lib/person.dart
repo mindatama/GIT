@@ -4,7 +4,7 @@ class person {
     this.name = name;
 
     person() {
-      print('NIK person adalah: 10023543');
+      print('NIK personil adalah: 10023543');
     }
   }
 }
