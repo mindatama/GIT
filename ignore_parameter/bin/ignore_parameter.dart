@@ -1,5 +1,8 @@
-import 'package:ignore_parameter/ignore_parameter.dart' as ignore_parameter;
+import 'package:ignore_parameter/ignore_parameter.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${ignore_parameter.calculate()}!');
+  var p = person('dave', doinghoby: (_) {
+    print('swimming in the pool');
+  });
+  p.takerest();
 }
