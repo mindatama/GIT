@@ -3,7 +3,7 @@ class person {
   int umur;
   static int maxumur = 150;
 
-  Person(name, int umur) {
+  Person(name, umur) {
     this.umur = (umur > 150) ? 150 : umur;
   }
 }

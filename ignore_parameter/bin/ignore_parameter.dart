@@ -7,7 +7,7 @@ class person {
   int umur;
   static int maxumur = 150;
 
-  person(String s, int i) {
+  person(name, umur) {
     this.umur = (umur > 150) ? 150 : umur;
   }
 }
