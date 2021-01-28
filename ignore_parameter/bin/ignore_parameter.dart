@@ -1,13 +1,28 @@
-void main(List<String> arguments) {
-  print(person.maxumur);
+void main(List<String> arguments) async {
+  var p = orang();
+
+  print('satu');
+  print('dua');
+  p.s().then((_) {
+    print('tiga ' + p.nama);
+  });
+  await p.getData();
+  print('empat ');
+  print('lima');
 }
 
-class person {
-  String name;
-  int umur;
-  static int maxumur = 150;
+class orang {
+  String nama = 'default nama';
 
-  person(name, umur) {
-    this.umur = (umur > 150) ? 150 : umur;
+  Future<void> getData() async {
+    await Future.delayed(Duration(seconds: 7));
+    nama = 'wiwi';
+    print('delay 7detik');
+  }
+
+  Future<void> s() async {
+    await Future.delayed(Duration(seconds: 2));
+    nama = 'joko';
+    print('delay 2detik');
   }
 }
