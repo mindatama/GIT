@@ -1,28 +1,23 @@
-void main(List<String> arguments) async {
-  var p = orang();
+const pi = 3.14;
 
-  print('satu');
-  print('dua');
-  p.s().then((_) {
-    print('tiga ' + p.nama);
-  });
-  await p.getData();
-  print('empat ');
-  print('lima');
+void main(List<String> arguments) {
+  var a = const cocl(number: 5);
+  var b = const cocl(number: 5);
+  print(identical(a, b));
+  print(pi);
 }
 
-class orang {
-  String nama = 'default nama';
+class cocl {
+  final int number;
+  const cocl({this.number});
+}
 
-  Future<void> getData() async {
-    await Future.delayed(Duration(seconds: 7));
-    nama = 'wiwi';
-    print('delay 7detik');
-  }
+class rgcl {
+  final int number;
+  static const myc = 14;
 
-  Future<void> s() async {
-    await Future.delayed(Duration(seconds: 2));
-    nama = 'joko';
-    print('delay 2detik');
+  rgcl({this.number}) {
+    const anco = 15;
+    print(anco);
   }
 }
