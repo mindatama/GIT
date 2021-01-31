@@ -1,4 +1,5 @@
 void main(List<String> arguments) {
+  // ignore: omit_local_variable_types
   List<orang> perso = [
     orang('Admin', 32),
     orang('user', 13),
@@ -20,6 +21,8 @@ void main(List<String> arguments) {
     print(Element.role + ' - ' + Element.age.toString());
   });
 }
+
+class A {}
 
 class orang {
   final String role;
