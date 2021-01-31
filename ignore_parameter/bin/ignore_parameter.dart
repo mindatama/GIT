@@ -1,3 +1,5 @@
+import 'package:meta/meta.dart';
+
 void main(List<String> arguments) {
   ucoa m = ucoa(status: ucoastatus.poisoned);
   print('hehe');
@@ -5,6 +7,13 @@ void main(List<String> arguments) {
   m
     ..move()
     ..eat();
+  try {
+    person p;
+    p = person(na: null);
+  } catch (e) {
+    print('isi dulu');
+  }
+  print('hay');
 }
 
 enum ucoastatus { normal, poisoned, confused }
@@ -31,5 +40,14 @@ class ucoa {
 
   void eat() {
     print('makan indomie');
+  }
+}
+
+class person {
+  final String na;
+  final int age;
+
+  person({@required this.na, this.age = 0}) {
+    assert(na != null, 'isi namanya');
   }
 }
