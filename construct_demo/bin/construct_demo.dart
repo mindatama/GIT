@@ -1,12 +1,16 @@
-import 'dart:io';
-
-import 'package:construct_demo/person.dart';
-import 'package:construct_demo/student.dart';
+import 'package:construct_demo/datetime_secure_box.dart';
+import 'package:construct_demo/int_secure_box.dart';
+import 'package:construct_demo/secure_box.dart';
 
 void main(List<String> arguments) {
-  // var input = stdin.readLineSync();
+  var box = securebox<DateTime>(DateTime.now(), '123');
+  print(box.getData('123').toString());
 
-  person p = student();
+  var box2 = securebox<Person>(Person('Wijat'), '123');
+  print(box2.getData('123').name);
+}
 
-  print(p.name);
+class Person {
+  final String name;
+  Person(this.name);
 }
