@@ -7,6 +7,8 @@ void main(List<String> arguments) {
     orang('user', 7),
     orang('merchan', 14),
     orang('Admin', 19),
+    orang('kuda', 11),
+    orang('zebra', 10),
   ];
 
   perso.sort((p1, p2) {
