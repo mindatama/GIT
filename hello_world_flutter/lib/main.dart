@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         body: Center(
             child: Container(
                 color: Colors.lightBlue,
-                width: 150,
+                width: 200,
                 height: 75,
                 child: Text(
                   "Saya sedang melatih kemampuan flutter saya",
