@@ -1,28 +1,31 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Myapp());
 }
 
-class MyApp extends StatelessWidget {
+class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Row dan coloumn'),
+          title: Text("latihan contaner"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text("data 1"),
-            Text("data 2"),
-            Text("data 3"),
-            Row(
-              children: <Widget>[Text("data 04"), Text("data 05")],
-            )
-          ],
+        body: Container(
+          color: Colors.red,
+          margin: EdgeInsets.fromLTRB(25, 40, 5, 50),
+          padding: EdgeInsets.all(10),
+          child: Container(
+            // color: Colors.blue,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: <Color>[Colors.amber, Colors.blue, Colors.green])),
+            margin: EdgeInsets.all(10),
+          ),
         ),
       ),
     );
