@@ -11,11 +11,7 @@ class Myapp extends StatefulWidget {
 
 class _MyappState extends State<Myapp> {
   String m = "tombol belum ditekan";
-  void tekan() {
-    setState(() {
-      m = "Telah ditekan";
-    });
-  }
+  // void tekan() {}
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +25,13 @@ class _MyappState extends State<Myapp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(m),
-              RaisedButton(child: Text("Tekan saya"), onPressed: tekan)
+              RaisedButton(
+                  child: Text("Tekan saya"),
+                  onPressed: () {
+                    setState(() {
+                      m = "Telah ditekan";
+                    });
+                  })
             ],
           ),
         ),
