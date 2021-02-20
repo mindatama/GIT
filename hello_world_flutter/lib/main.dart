@@ -10,10 +10,10 @@ class Myapp extends StatefulWidget {
 }
 
 class _MyappState extends State<Myapp> {
-  int num = 0;
+  String m = "tombol belum ditekan";
   void tekan() {
     setState(() {
-      num = num + 1;
+      m = "Telah ditekan";
     });
   }
 
@@ -22,17 +22,14 @@ class _MyappState extends State<Myapp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("stateful widget demo"),
+          title: Text("Anonymous Method"),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                num.toString(),
-                style: TextStyle(fontSize: 10 + num.toDouble()),
-              ),
-              RaisedButton(child: Text("tambah 1"), onPressed: tekan)
+              Text(m),
+              RaisedButton(child: Text("Tekan saya"), onPressed: tekan)
             ],
           ),
         ),
