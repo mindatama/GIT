@@ -1,5 +1,4 @@
-import 'dart:developer';
-import 'dart:ui';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -13,47 +12,29 @@ class Myapp extends StatefulWidget {
 }
 
 class _MyappState extends State<Myapp> {
-  List<Widget> widgets = [];
-  int counter = 30;
+  Random ra = Random();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Listview"),
+          title: Text("Pencet Kotaknya!"),
         ),
-        body: ListView(children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              RaisedButton(
-                child: Text('Tambah Data'),
-                onPressed: () {
-                  setState(() {
-                    widgets.add(Text(
-                      "data ke-" + counter.toString(),
-                      style: TextStyle(fontSize: 20),
-                    ));
-                    counter++;
-                  });
-                },
-              ),
-              RaisedButton(
-                  child: Text("Hapus"),
-                  onPressed: () {
-                    setState(() {
-                      widgets.removeLast();
-                      counter--;
-                    });
-                  })
-            ],
+        body: Center(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {});
+            },
+            child: AnimatedContainer(
+              color: Color.fromARGB(
+                  255, ra.nextInt(255), ra.nextInt(256), ra.nextInt(256)),
+              duration: Duration(seconds: 1),
+              width: 50.0 + ra.nextInt(201),
+              height: 50.0 + ra.nextInt(201),
+            ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: widgets,
-          )
-        ]),
+        ),
       ),
     );
   }
