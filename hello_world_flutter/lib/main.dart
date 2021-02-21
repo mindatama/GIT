@@ -15,7 +15,7 @@ class _MyappState extends State<Myapp> {
   List<Widget> widgets = [];
 
   _MyappState() {
-    for (int i = 0; i <= 15; i++)
+    for (int i = 0; i <= 19; i++)
       widgets.add(Text(
         "data ke-" + i.toString(),
         style: TextStyle(fontSize: 20),
@@ -29,7 +29,7 @@ class _MyappState extends State<Myapp> {
         appBar: AppBar(
           title: Text("Latihan Listview"),
         ),
-        body: Column(
+        body: ListView(
           children: widgets,
         ),
       ),
