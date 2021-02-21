@@ -6,25 +6,31 @@ void main() {
   runApp(Myapp());
 }
 
-class Myapp extends StatelessWidget {
+class Myapp extends StatefulWidget {
+  @override
+  _MyappState createState() => _MyappState();
+}
+
+class _MyappState extends State<Myapp> {
+  List<Widget> widgets = [];
+
+  _MyappState() {
+    for (int i = 0; i <= 15; i++)
+      widgets.add(Text(
+        "data ke-" + i.toString(),
+        style: TextStyle(fontSize: 20),
+      ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan textStyle"),
+          title: Text("Latihan Listview"),
         ),
-        body: Center(
-          child: Text(
-            "Ini adalah Text",
-            style: TextStyle(
-                fontFamily: "AbhayaLibre",
-                fontSize: 30,
-                decoration: TextDecoration.overline,
-                decorationColor: Colors.red,
-                decorationThickness: 50,
-                decorationStyle: TextDecorationStyle.wavy),
-          ),
+        body: Column(
+          children: widgets,
         ),
       ),
     );
