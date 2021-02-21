@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -13,14 +14,7 @@ class Myapp extends StatefulWidget {
 
 class _MyappState extends State<Myapp> {
   List<Widget> widgets = [];
-
-  _MyappState() {
-    for (int i = 0; i <= 19; i++)
-      widgets.add(Text(
-        "data ke-" + i.toString(),
-        style: TextStyle(fontSize: 20),
-      ));
-  }
+  int counter = 30;
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +23,37 @@ class _MyappState extends State<Myapp> {
         appBar: AppBar(
           title: Text("Latihan Listview"),
         ),
-        body: ListView(
-          children: widgets,
-        ),
+        body: ListView(children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              RaisedButton(
+                child: Text('Tambah Data'),
+                onPressed: () {
+                  setState(() {
+                    widgets.add(Text(
+                      "data ke-" + counter.toString(),
+                      style: TextStyle(fontSize: 20),
+                    ));
+                    counter++;
+                  });
+                },
+              ),
+              RaisedButton(
+                  child: Text("Hapus"),
+                  onPressed: () {
+                    setState(() {
+                      widgets.removeLast();
+                      counter--;
+                    });
+                  })
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: widgets,
+          )
+        ]),
       ),
     );
   }
