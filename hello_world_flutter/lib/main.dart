@@ -1,38 +1,29 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(Myapp());
 }
 
-class Myapp extends StatefulWidget {
-  @override
-  _MyappState createState() => _MyappState();
-}
-
-class _MyappState extends State<Myapp> {
-  String m = "tombol belum ditekan";
-  // void tekan() {}
-
+class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Anonymous Method"),
+          title: Text("Latihan textStyle"),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(m),
-              RaisedButton(
-                  child: Text("Tekan saya"),
-                  onPressed: () {
-                    setState(() {
-                      m = "Telah ditekan";
-                    });
-                  })
-            ],
+          child: Text(
+            "Ini adalah Text",
+            style: TextStyle(
+                fontFamily: "AbhayaLibre",
+                fontSize: 30,
+                decoration: TextDecoration.overline,
+                decorationColor: Colors.red,
+                decorationThickness: 50,
+                decorationStyle: TextDecorationStyle.wavy),
           ),
         ),
       ),
