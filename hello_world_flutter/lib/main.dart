@@ -20,15 +20,35 @@ class Myapp extends StatelessWidget {
                 flex: 1,
                 child: Row(
                   children: <Widget>[
-                    Flexible(flex: 1, child: Container(color: Colors.brown)),
-                    Flexible(flex: 2, child: Container(color: Colors.black38)),
-                    Flexible(flex: 3, child: Container(color: Colors.cyan)),
                     Flexible(
-                        flex: 4, child: Container(color: Colors.deepPurple)),
+                        flex: 1,
+                        child: Container(
+                          color: Colors.brown,
+                          margin: EdgeInsets.all(7),
+                        )),
+                    Flexible(
+                        flex: 2,
+                        child: Container(
+                            color: Colors.black38, margin: EdgeInsets.all(7))),
+                    Flexible(
+                        flex: 3,
+                        child: Container(
+                            color: Colors.cyan, margin: EdgeInsets.all(7))),
+                    Flexible(
+                        flex: 4,
+                        child: Container(
+                            color: Colors.deepPurple,
+                            margin: EdgeInsets.all(7))),
                   ],
                 )),
-            Flexible(flex: 2, child: Container(color: Colors.lime)),
-            Flexible(flex: 1, child: Container(color: Colors.blueGrey)),
+            Flexible(
+                flex: 2,
+                child:
+                    Container(color: Colors.lime, margin: EdgeInsets.all(7))),
+            Flexible(
+                flex: 1,
+                child: Container(
+                    color: Colors.blueGrey, margin: EdgeInsets.all(7))),
           ],
         ),
       ),
