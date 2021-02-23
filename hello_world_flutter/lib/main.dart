@@ -6,34 +6,30 @@ void main() {
   runApp(Myapp());
 }
 
-class Myapp extends StatefulWidget {
-  @override
-  _MyappState createState() => _MyappState();
-}
-
-class _MyappState extends State<Myapp> {
-  Random ra = Random();
-
+class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Pencet Kotaknya!"),
+          title: Text("Flexible Widget"),
         ),
-        body: Center(
-          child: GestureDetector(
-            onTap: () {
-              setState(() {});
-            },
-            child: AnimatedContainer(
-              color: Color.fromARGB(
-                  255, ra.nextInt(255), ra.nextInt(256), ra.nextInt(256)),
-              duration: Duration(seconds: 1),
-              width: 50.0 + ra.nextInt(201),
-              height: 50.0 + ra.nextInt(201),
-            ),
-          ),
+        body: Column(
+          children: <Widget>[
+            Flexible(
+                flex: 1,
+                child: Row(
+                  children: <Widget>[
+                    Flexible(flex: 1, child: Container(color: Colors.brown)),
+                    Flexible(flex: 2, child: Container(color: Colors.black38)),
+                    Flexible(flex: 3, child: Container(color: Colors.cyan)),
+                    Flexible(
+                        flex: 4, child: Container(color: Colors.deepPurple)),
+                  ],
+                )),
+            Flexible(flex: 2, child: Container(color: Colors.lime)),
+            Flexible(flex: 1, child: Container(color: Colors.blueGrey)),
+          ],
         ),
       ),
     );
