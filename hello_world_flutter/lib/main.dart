@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -12,43 +12,105 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flexible Widget"),
+          title: Text("Latihan Stack& Align"),
         ),
-        body: Column(
+        body: Stack(
           children: <Widget>[
-            Flexible(
-                flex: 1,
-                child: Row(
+            //Background
+            Column(
+              children: <Widget>[
+                Flexible(
+                    flex: 1,
+                    child: Row(
+                      children: <Widget>[
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.white12)),
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.black12))
+                      ],
+                    )),
+                Flexible(
+                    flex: 1,
+                    child: Row(
+                      children: <Widget>[
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.black12)),
+                        Flexible(
+                            flex: 1, child: Container(color: Colors.white12))
+                      ],
+                    ))
+              ],
+            ),
+            //text
+            ListView(
+              children: <Widget>[
+                Column(
                   children: <Widget>[
-                    Flexible(
-                        flex: 1,
-                        child: Container(
-                          color: Colors.brown,
-                          margin: EdgeInsets.all(7),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
                         )),
-                    Flexible(
-                        flex: 2,
-                        child: Container(
-                            color: Colors.black38, margin: EdgeInsets.all(7))),
-                    Flexible(
-                        flex: 3,
-                        child: Container(
-                            color: Colors.cyan, margin: EdgeInsets.all(7))),
-                    Flexible(
-                        flex: 4,
-                        child: Container(
-                            color: Colors.deepPurple,
-                            margin: EdgeInsets.all(7))),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
+                    Container(
+                        margin: EdgeInsets.all(20),
+                        child: Text(
+                          "ini adalah text",
+                          style: TextStyle(fontSize: 30),
+                        )),
                   ],
-                )),
-            Flexible(
-                flex: 2,
-                child:
-                    Container(color: Colors.lime, margin: EdgeInsets.all(7))),
-            Flexible(
-                flex: 1,
-                child: Container(
-                    color: Colors.blueGrey, margin: EdgeInsets.all(7))),
+                ),
+              ],
+            ),
+            //button
+            Align(
+                alignment: Alignment(0.9, 0.85),
+                child: RaisedButton(
+                    child: Text("Tekanlah"),
+                    color: Colors.cyan,
+                    onPressed: () {}))
           ],
         ),
       ),
