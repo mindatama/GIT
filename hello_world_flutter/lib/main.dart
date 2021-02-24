@@ -14,104 +14,16 @@ class Myapp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Latihan Stack& Align"),
         ),
-        body: Stack(
-          children: <Widget>[
-            //Background
-            Column(
-              children: <Widget>[
-                Flexible(
-                    flex: 1,
-                    child: Row(
-                      children: <Widget>[
-                        Flexible(
-                            flex: 1, child: Container(color: Colors.white12)),
-                        Flexible(
-                            flex: 1, child: Container(color: Colors.black12))
-                      ],
-                    )),
-                Flexible(
-                    flex: 1,
-                    child: Row(
-                      children: <Widget>[
-                        Flexible(
-                            flex: 1, child: Container(color: Colors.black12)),
-                        Flexible(
-                            flex: 1, child: Container(color: Colors.white12))
-                      ],
-                    ))
-              ],
+        body: Center(
+          child: Container(
+            width: 200,
+            height: 100,
+            padding: EdgeInsets.all(3),
+            child: Image(
+              image: AssetImage(''),
+              fit: BoxFit.cover,
             ),
-            //text
-            ListView(
-              children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                    Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          "ini adalah text",
-                          style: TextStyle(fontSize: 30),
-                        )),
-                  ],
-                ),
-              ],
-            ),
-            //button
-            Align(
-                alignment: Alignment(0.9, 0.85),
-                child: RaisedButton(
-                    child: Text("Tekanlah"),
-                    color: Colors.cyan,
-                    onPressed: () {}))
-          ],
+          ),
         ),
       ),
     );
