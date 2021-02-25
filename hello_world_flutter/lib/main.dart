@@ -12,17 +12,39 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Stack& Align"),
+          title: Text("Latihan Spacer widget"),
         ),
         body: Center(
-          child: Container(
-            width: 200,
-            height: 100,
-            padding: EdgeInsets.all(3),
-            child: Image(
-              image: AssetImage(''),
-              fit: BoxFit.cover,
-            ),
+          child: Row(
+            children: <Widget>[
+              Spacer(
+                flex: 1,
+              ),
+              Container(
+                width: 80,
+                height: 80,
+                color: Colors.red,
+              ),
+              Spacer(
+                flex: 4,
+              ),
+              Container(
+                width: 80,
+                height: 80,
+                color: Colors.blue,
+              ),
+              Spacer(
+                flex: 2,
+              ),
+              Container(
+                width: 80,
+                height: 80,
+                color: Colors.green,
+              ),
+              Spacer(
+                flex: 1,
+              ),
+            ],
           ),
         ),
       ),
