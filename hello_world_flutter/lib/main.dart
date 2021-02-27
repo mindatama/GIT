@@ -1,51 +1,39 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(Myapp());
 }
 
-class Myapp extends StatelessWidget {
+class Myapp extends StatefulWidget {
+  @override
+  _MyappState createState() => _MyappState();
+}
+
+class _MyappState extends State<Myapp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Spacer widget"),
+          title: Text('Dragable'),
         ),
-        body: Center(
-          child: Row(
-            children: <Widget>[
-              Spacer(
-                flex: 1,
-              ),
-              Container(
-                width: 80,
-                height: 80,
-                color: Colors.red,
-              ),
-              Spacer(
-                flex: 4,
-              ),
-              Container(
-                width: 80,
-                height: 80,
-                color: Colors.blue,
-              ),
-              Spacer(
-                flex: 2,
-              ),
-              Container(
-                width: 80,
-                height: 80,
-                color: Colors.green,
-              ),
-              Spacer(
-                flex: 1,
-              ),
-            ],
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                SizedBox(
+                  width: 200,
+                  height: 100,
+                  child: Material(
+                    color: Colors.amber,
+                    shape: StadiumBorder(),
+                    elevation: 3,
+                  ),
+                )
+              ],
+            ),
+          ],
         ),
       ),
     );
