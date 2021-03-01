@@ -28,6 +28,22 @@ class _MainPageState extends State<MainPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               TextField(
+                decoration: InputDecoration(
+                    icon: Icon(Icons.access_alarms),
+                    prefixIcon: Icon(Icons.airplanemode_active),
+                    // prefixText: 'Namanya: ',
+                    suffixText: 'done',
+                    fillColor: Colors.lightBlue.withOpacity(0.2),
+                    filled: true,
+                    labelText: 'Nama Lengkap',
+                    hintText: 'nama lengkap lho',
+                    hintStyle: TextStyle(color: Colors.black, fontSize: 12),
+                    labelStyle: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.w700),
+                    prefixStyle: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.w700),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10))),
                 obscureText: true,
                 maxLength: 5,
                 onChanged: (v) {
