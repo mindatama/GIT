@@ -18,8 +18,13 @@ class SecondPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             buildCard(Icons.account_box_rounded, 'akun box rounded'),
-            buildCard(Icons.account_box_sharp, 'sharp'),
-            buildCard(Icons.account_box_outlined, "outline"),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                buildCard(Icons.account_box_sharp, 'sharp'),
+                buildCard(Icons.account_box_outlined, "outline"),
+              ],
+            ),
             Center(
               child: RaisedButton(
                 child: Text("Ke Main Page"),
