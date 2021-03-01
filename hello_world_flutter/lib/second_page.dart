@@ -9,7 +9,7 @@ class SecondPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         title: Text(
-          "Second Page",
+          "Second Page & Card Widget",
           style: TextStyle(color: Colors.black),
         ),
       ),
@@ -39,7 +39,12 @@ class SecondPage extends StatelessWidget {
       elevation: 5,
       child: Row(
         children: <Widget>[
-          Container(margin: EdgeInsets.all(5), child: Icon(ide)),
+          Container(
+              margin: EdgeInsets.all(5),
+              child: Icon(
+                ide,
+                color: Colors.green,
+              )),
           Text(T)
         ],
       ),
