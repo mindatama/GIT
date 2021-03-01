@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hello_world_flutter/second_page.dart';
 
-class MainPage extends StatelessWidget {
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  TextEditingController ct = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,14 +22,32 @@ class MainPage extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
         ),
-        body: Center(
-          child: RaisedButton(
-            child: Text("Ke Second Page"),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return SecondPage();
-              }));
-            },
+        body: Container(
+          margin: EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              TextField(
+                obscureText: true,
+                maxLength: 5,
+                onChanged: (v) {
+                  setState(() {});
+                },
+                controller: ct,
+              ),
+              Text(ct.text),
+              Center(
+                child: RaisedButton(
+                  child: Text("Ke Second Page"),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SecondPage();
+                    }));
+                  },
+                ),
+              ),
+            ],
           ),
         ),
       ),
