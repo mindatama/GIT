@@ -1,22 +1,47 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/main_page.dart';
 
 class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green.withOpacity(0.8),
       appBar: AppBar(
-        title: Text("Second Page"),
-      ),
-      body: Center(
-        child: RaisedButton(
-          child: Text("Ke Main Page"),
-          onPressed: () {
-            Navigator.pop(context, MaterialPageRoute(builder: (context) {
-              return MainPage();
-            }));
-          },
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        title: Text(
+          "Second Page",
+          style: TextStyle(color: Colors.black),
         ),
+      ),
+      body: Container(
+        margin: EdgeInsets.all(5),
+        child: ListView(
+          children: <Widget>[
+            buildCard(Icons.account_box_rounded, 'akun box rounded'),
+            buildCard(Icons.account_box_sharp, 'sharp'),
+            buildCard(Icons.account_box_outlined, "outline"),
+            Center(
+              child: RaisedButton(
+                child: Text("Ke Main Page"),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Card buildCard(IconData ide, String T) {
+    return Card(
+      elevation: 5,
+      child: Row(
+        children: <Widget>[
+          Container(margin: EdgeInsets.all(5), child: Icon(ide)),
+          Text(T)
+        ],
       ),
     );
   }
