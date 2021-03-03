@@ -5,8 +5,35 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
+        body: (MediaQuery.of(context).orientation == Orientation.portrait)
+            ? Column(
+                children: children(context),
+              )
+            : Row(
+                children: children(context),
+              ));
+  }
+
+  List<Widget> children(BuildContext context) {
+    return <Widget>[
+      Container(
+        color: Colors.amber,
+        width: 100,
+        height: 100,
+      ),
+      Container(
+        color: Colors.grey,
+        width: 100,
+        height: 100,
+      ),
+      Container(
+        color: Colors.purple,
+        width: 100,
+        height: 100,
+      ),
+      Container(
+        child: Center(
+            child: ElevatedButton(
           child: Text("Ke Main Page"),
           onPressed: () {
             Navigator.pushReplacement(context,
@@ -14,8 +41,8 @@ class LoginPage extends StatelessWidget {
               return MainPage();
             }));
           },
-        ),
+        )),
       ),
-    );
+    ];
   }
 }
