@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world_flutter/second_page.dart';
+import 'package:hello_world_flutter/third_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -52,16 +53,27 @@ class _MainPageState extends State<MainPage> {
                 controller: ct,
               ),
               Text(ct.text),
-              Center(
-                child: ElevatedButton(
-                  child: Text("Ke Second Page"),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return SecondPage();
-                    }));
-                  },
-                ),
+              Column(
+                children: [
+                  ElevatedButton(
+                    child: Text("Ke Second Page"),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return SecondPage();
+                      }));
+                    },
+                  ),
+                  ElevatedButton(
+                    child: Text("Ke Third Page"),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return ThirdPage();
+                      }));
+                    },
+                  ),
+                ],
               ),
             ],
           ),
