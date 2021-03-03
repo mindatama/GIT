@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:hello_world_flutter/second_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -31,13 +30,14 @@ class _MainPageState extends State<MainPage> {
                 decoration: InputDecoration(
                     icon: Icon(Icons.access_alarms),
                     prefixIcon: Icon(Icons.airplanemode_active),
-                    // prefixText: 'Namanya: ',
+                    prefixText: 'Namanya: ',
                     suffixText: 'done',
                     fillColor: Colors.lightBlue.withOpacity(0.2),
                     filled: true,
                     labelText: 'Nama Lengkap',
                     hintText: 'nama lengkap lho',
-                    hintStyle: TextStyle(color: Colors.black, fontSize: 12),
+                    hintStyle: TextStyle(
+                        color: Colors.black.withOpacity(0.2), fontSize: 12),
                     labelStyle: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w700),
                     prefixStyle: TextStyle(
@@ -53,7 +53,7 @@ class _MainPageState extends State<MainPage> {
               ),
               Text(ct.text),
               Center(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text("Ke Second Page"),
                   onPressed: () {
                     Navigator.push(context,
