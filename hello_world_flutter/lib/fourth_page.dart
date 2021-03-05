@@ -8,6 +8,13 @@ class FourthPage extends StatefulWidget {
 class _FourthPageState extends State<FourthPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(''),
+        ),
+        body: Container(),
+      ),
+    );
   }
 }
