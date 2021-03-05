@@ -13,7 +13,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.green.withOpacity(0.25),
+        backgroundColor: Color.fromRGBO(25, 171, 75, 0.75),
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
