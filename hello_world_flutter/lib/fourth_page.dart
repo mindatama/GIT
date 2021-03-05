@@ -11,7 +11,7 @@ class _FourthPageState extends State<FourthPage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(''),
+          title: Text('page four'),
         ),
         body: Container(),
       ),
