@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/fourth_page.dart';
 import 'package:hello_world_flutter/main_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -33,15 +34,29 @@ class LoginPage extends StatelessWidget {
       ),
       Container(
         child: Center(
-            child: ElevatedButton(
-          child: Text("Ke Main Page"),
-          onPressed: () {
-            Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) {
-              return MainPage();
-            }));
-          },
-        )),
+          child: ElevatedButton(
+            child: Text("Ke Main Page"),
+            onPressed: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return MainPage();
+              }));
+            },
+          ),
+        ),
+      ),
+      Container(
+        child: Center(
+          child: ElevatedButton(
+            child: Text("Ke Main Page"),
+            onPressed: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return FourthPage();
+              }));
+            },
+          ),
+        ),
       ),
     ];
   }
