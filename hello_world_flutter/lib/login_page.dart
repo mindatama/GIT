@@ -19,18 +19,18 @@ class LoginPage extends StatelessWidget {
     return <Widget>[
       Container(
         color: Colors.amber,
-        width: 100,
-        height: 100,
+        width: 50,
+        height: 50,
       ),
       Container(
         color: Colors.grey,
-        width: 100,
-        height: 100,
+        width: 50,
+        height: 50,
       ),
       Container(
         color: Colors.purple,
-        width: 100,
-        height: 100,
+        width: 50,
+        height: 50,
       ),
       Container(
         child: Center(
@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
       Container(
         child: Center(
           child: ElevatedButton(
-            child: Text("Ke Main Page"),
+            child: Text("Ke 4th Page"),
             onPressed: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {

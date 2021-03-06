@@ -44,6 +44,8 @@ flutter:
   assets:
      - asset/elang.png
      - asset/pohon.jpg
+     - asset/linkedin-logo.png
+     - asset/github-logo.png
 
 
   
@@ -65,8 +67,8 @@ flutter:
     - family: AbhayaLibre
       fonts:
         - asset: fonts/AbhayaLibre-Regular.ttf
-        - asset: fonts/AbhayaLibre-Italic.ttf
-        - style: italic
+        - asset: fonts/AbhayaLibre-Bold.ttf
+        - weight: 700
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
