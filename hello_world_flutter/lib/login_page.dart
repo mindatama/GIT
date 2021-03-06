@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/fiveth_page.dart';
 import 'package:hello_world_flutter/fourth_page.dart';
 import 'package:hello_world_flutter/main_page.dart';
 
@@ -53,6 +54,19 @@ class LoginPage extends StatelessWidget {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
                 return FourthPage();
+              }));
+            },
+          ),
+        ),
+      ),
+      Container(
+        child: Center(
+          child: ElevatedButton(
+            child: Text("Ke 5th"),
+            onPressed: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return FivethPage();
               }));
             },
           ),
