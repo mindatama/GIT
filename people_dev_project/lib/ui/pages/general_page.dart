@@ -43,7 +43,24 @@ class GeneralPage extends StatelessWidget {
                                   height: 24,
                                   child: Text("<"),
                                 )
-                              : SizedBox()
+                              : SizedBox(),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                title,
+                                style: GoogleFonts.poppins(
+                                    fontSize: 22, fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                subtitle,
+                                style: GoogleFonts.poppins(
+                                    color: "8d92a3".toColor(),
+                                    fontWeight: FontWeight.w300),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     ),
