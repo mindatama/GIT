@@ -22,7 +22,7 @@ class GeneralPage extends StatelessWidget {
           Container(color: Colors.white),
           SafeArea(
               child: Container(
-            color: backColor ?? "FAFAFC".toColor(),
+            color: backColor ?? Colors.white,
           )),
           SafeArea(
             child: ListView(
@@ -30,18 +30,21 @@ class GeneralPage extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(bottom: defaultMargin),
                       padding: EdgeInsets.symmetric(horizontal: defaultMargin),
                       width: double.infinity,
                       height: 100,
-                      color: Colors.lightBlue,
+                      color: Colors.white,
                       child: Row(
                         children: [
                           onBackButtonPressed != null
                               ? Container(
                                   width: 24,
                                   height: 24,
-                                  child: Text("<"),
+                                  margin: EdgeInsets.only(right: 26),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/back_arrow.png'))),
                                 )
                               : SizedBox(),
                           Column(
@@ -64,6 +67,10 @@ class GeneralPage extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Container(
+                        height: defaultMargin,
+                        width: double.infinity,
+                        color: "FAFAFC".toColor()),
                     child ?? SizedBox()
                   ],
                 ),
