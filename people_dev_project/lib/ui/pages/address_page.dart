@@ -8,7 +8,6 @@ class AddressPage extends StatefulWidget {
 class _AddressPageState extends State<AddressPage> {
   @override
   Widget build(BuildContext context) {
-    TextEditingController sectionController = TextEditingController();
     TextEditingController jabatanController = TextEditingController();
     TextEditingController tempatlahirController = TextEditingController();
     TextEditingController tanggallahirController = TextEditingController();
@@ -55,46 +54,6 @@ class _AddressPageState extends State<AddressPage> {
                 DropdownMenuItem(
                     child: Text(
                   'ENG',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'LCND',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'BE',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'LOG',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'IT',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'HR',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'FIN',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'GS',
-                  style: blackFontStyle14,
-                )),
-                DropdownMenuItem(
-                    child: Text(
-                  'IER',
                   style: blackFontStyle14,
                 ))
               ],
