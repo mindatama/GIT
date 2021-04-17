@@ -82,7 +82,7 @@ class _SignInPageState extends State<SignInPage> {
                     child: Text(
                       'Masuk',
                       style: GoogleFonts.poppins(
-                          color: Colors.white, fontWeight: FontWeight.w500),
+                          color: Colors.black, fontWeight: FontWeight.w500),
                     )),
           ),
           Container(
