@@ -11,6 +11,8 @@ class _HomePageState extends State<HomePage> {
     return ListView(
       children: [
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             //// HEADER
             Container(
@@ -41,12 +43,14 @@ class _HomePageState extends State<HomePage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         image: DecorationImage(
-                            image: AssetImage('assets/photo.png'))),
+                            image: AssetImage('assets/photo.png'),
+                            fit: BoxFit.cover)),
                   )
                 ],
               ),
-            )
-            //// LIST
+            ),
+            //// LISTFOOD
+            PeopleCard(mockPeople)
             //// LIST
           ],
         )

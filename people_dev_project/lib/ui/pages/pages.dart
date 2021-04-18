@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:people_dev_project/models/models.dart';
 import 'package:people_dev_project/shared/shared.dart';
 import 'package:people_dev_project/ui/widgets/widgets.dart';
 import 'package:supercharged/supercharged.dart';
