@@ -23,19 +23,19 @@ List<People> mockPeoples = [
       picturePath: 'assets/photo.png',
       nama: "Sri Devi",
       section: "IT",
-      jabatan: "Foreman",
+      jabatan: "Superintendent",
       rate: 4.2),
   People(
       nik: 10023542,
       picturePath: 'assets/photo.png',
       nama: "Reymonth S",
       section: "IT",
-      jabatan: "Foreman",
+      jabatan: "Supervisor",
       rate: 4.4),
   People(
       nik: 10023543,
       picturePath: 'assets/photo.png',
-      nama: "wijatmoko",
+      nama: "Wijatmoko Mindatama",
       section: "IT",
       jabatan: "Foreman",
       rate: 4.5),
@@ -49,7 +49,7 @@ List<People> mockPeoples = [
   People(
       nik: 10023321,
       picturePath: 'assets/photo.png',
-      nama: "Syukur",
+      nama: "Syukur Pamuji",
       section: "IT",
       jabatan: "Foreman",
       rate: 4.2),
@@ -58,13 +58,13 @@ List<People> mockPeoples = [
       picturePath: 'assets/photo.png',
       nama: "Fitra Darmawan",
       section: "IT",
-      jabatan: "Foreman",
+      jabatan: "IT Support",
       rate: 4.2),
   People(
       nik: 10023542,
       picturePath: 'assets/photo.png',
       nama: "Edi Suryani",
       section: "IT",
-      jabatan: "Foreman",
+      jabatan: "IT Support",
       rate: 4.3)
 ];

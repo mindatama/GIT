@@ -9,3 +9,4 @@ part 'custom_bottom_navbar.dart';
 part 'people_card.dart';
 part 'rating.dart';
 part 'custom_tabbar.dart';
+part 'people_list.dart';

@@ -9,6 +9,8 @@ class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
+    double listItemWidth =
+        MediaQuery.of(context).size.width - 2 * defaultMargin;
     return ListView(
       children: [
         Column(
@@ -88,18 +90,26 @@ class _HomePageState extends State<HomePage> {
                     height: 16,
                   ),
                   Builder(builder: (_) {
-                    String body = (selectedIndex == 0)
-                        ? 'NEW'
+                    List<People> peoples = (selectedIndex == 0)
+                        ? mockPeoples
                         : (selectedIndex == 1)
-                            ? 'POP'
-                            : 'REC';
-                    return Center(
-                      child: Text(
-                        body,
-                        style: blackFontStyle16,
-                      ),
-                    );
-                  })
+                            ? []
+                            : [];
+                    return Column(
+                        children: peoples
+                            .map((e) => Padding(
+                                  padding: EdgeInsets.fromLTRB(
+                                      defaultMargin, 0, defaultMargin, 16),
+                                  child: PeopleListItem(
+                                    people: e,
+                                    itemWidht: listItemWidth,
+                                  ),
+                                ))
+                            .toList());
+                  }),
+                  SizedBox(
+                    height: 80,
+                  )
                 ],
               ),
             ),
