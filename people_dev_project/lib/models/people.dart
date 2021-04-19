@@ -35,7 +35,7 @@ List<People> mockPeoples = [
   People(
       nik: 10023543,
       picturePath: 'assets/photo.png',
-      nama: "Wijatmoko Mindatama",
+      nama: "Wijatmoko",
       section: "IT",
       jabatan: "Foreman",
       rate: 4.5),
