@@ -6,6 +6,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -67,8 +68,41 @@ class _HomePageState extends State<HomePage> {
                   )
                 ],
               ),
-            )
+            ),
             //// LIST
+            Container(
+              width: double.infinity,
+              color: Colors.white,
+              child: Column(
+                children: [
+                  CustomTabBar(
+                    titles: ['new', 'pop', 'rec'],
+                    selectedIndex: selectedIndex,
+                    onTap: (index) {
+                      setState(() {
+                        selectedIndex = index;
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Builder(builder: (_) {
+                    String body = (selectedIndex == 0)
+                        ? 'NEW'
+                        : (selectedIndex == 1)
+                            ? 'POP'
+                            : 'REC';
+                    return Center(
+                      child: Text(
+                        body,
+                        style: blackFontStyle16,
+                      ),
+                    );
+                  })
+                ],
+              ),
+            ),
           ],
         )
       ],
