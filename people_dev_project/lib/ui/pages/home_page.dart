@@ -50,7 +50,24 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             //// LISTFOOD
-            PeopleCard(mockPeople)
+            Container(
+              height: 258,
+              width: double.infinity,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Row(
+                    children: mockPeoples
+                        .map((e) => Padding(
+                              padding: const EdgeInsets.only(
+                                  left: defaultMargin, right: 0),
+                              child: PeopleCard(e),
+                            ))
+                        .toList(),
+                  )
+                ],
+              ),
+            )
             //// LIST
           ],
         )

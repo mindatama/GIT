@@ -182,16 +182,16 @@ class _AddressPageState extends State<AddressPage> {
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
             child: ElevatedButton(
                 onPressed: () {
-                  Get.to(MainPage());
+                  Get.to(SignInPage());
                 },
-                // elevation: 0,
-                // shape: RoundedRectangleBorder(
-                //     borderRadius: BorderRadius.circular(8)),
-                // color: mainColor,
                 child: Text(
                   'Daftar Sekarang',
                   style: GoogleFonts.poppins(
                       color: Colors.black, fontWeight: FontWeight.w500),
+                  //       elevation: 0,
+                  // shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(8)),
+                  // color: mainColor,
                 )),
           ),
         ],

@@ -17,10 +17,54 @@ class People {
       this.rate});
 }
 
-People mockPeople = People(
-    nik: 10023543,
-    picturePath: 'assets/photo.png',
-    nama: "wijatmoko",
-    section: "IT",
-    jabatan: "Foreman",
-    rate: 4.2);
+List<People> mockPeoples = [
+  People(
+      nik: 10023542,
+      picturePath: 'assets/photo.png',
+      nama: "Sri Devi",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.2),
+  People(
+      nik: 10023542,
+      picturePath: 'assets/photo.png',
+      nama: "Reymonth S",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.4),
+  People(
+      nik: 10023543,
+      picturePath: 'assets/photo.png',
+      nama: "wijatmoko",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.5),
+  People(
+      nik: 10023123,
+      picturePath: 'assets/photo.png',
+      nama: "Dwi Suriananda",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.5),
+  People(
+      nik: 10023321,
+      picturePath: 'assets/photo.png',
+      nama: "Syukur",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.2),
+  People(
+      nik: 10023544,
+      picturePath: 'assets/photo.png',
+      nama: "Fitra Darmawan",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.2),
+  People(
+      nik: 10023542,
+      picturePath: 'assets/photo.png',
+      nama: "Edi Suryani",
+      section: "IT",
+      jabatan: "Foreman",
+      rate: 4.3)
+];
