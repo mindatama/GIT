@@ -6,6 +6,7 @@ class CustomTabBar extends StatelessWidget {
   final Function(int) onTap;
 
   CustomTabBar({@required this.titles, this.selectedIndex, this.onTap});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,15 +14,16 @@ class CustomTabBar extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            margin: EdgeInsets.only(
-              top: 48,
-            ),
+            margin: EdgeInsets.only(top: 48),
+            height: 1,
+            color: "F2F2F2".toColor(),
           ),
           Row(
             children: titles
                 .map((e) => Padding(
                       padding: EdgeInsets.only(left: defaultMargin),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           GestureDetector(
                             onTap: () {
@@ -32,7 +34,7 @@ class CustomTabBar extends StatelessWidget {
                             child: Text(
                               e,
                               style: (titles.indexOf(e) == selectedIndex)
-                                  ? blackFontStyle14.copyWith(
+                                  ? blackFontStyle3.copyWith(
                                       fontWeight: FontWeight.w500)
                                   : greyFontStyle,
                             ),
@@ -46,12 +48,12 @@ class CustomTabBar extends StatelessWidget {
                                 color: (titles.indexOf(e) == selectedIndex)
                                     ? "020202".toColor()
                                     : Colors.transparent),
-                          ),
+                          )
                         ],
                       ),
                     ))
                 .toList(),
-          ),
+          )
         ],
       ),
     );
