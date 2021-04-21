@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         'Buma Tabang Project',
@@ -62,8 +63,11 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     children: mockPeoples
                         .map((e) => Padding(
-                              padding: const EdgeInsets.only(
-                                  left: defaultMargin, right: 0),
+                              padding: EdgeInsets.only(
+                                  left: (e == mockPeoples.first)
+                                      ? defaultMargin
+                                      : 0,
+                                  right: defaultMargin),
                               child: PeopleCard(e),
                             ))
                         .toList(),
@@ -78,7 +82,11 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   CustomTabBar(
-                    titles: ['new', 'pop', 'rec'],
+                    titles: [
+                      'Best SHE-RA',
+                      'Operator of The Month',
+                      'Mechanic of The Month'
+                    ],
                     selectedIndex: selectedIndex,
                     onTap: (index) {
                       setState(() {

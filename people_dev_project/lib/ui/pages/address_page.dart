@@ -194,6 +194,9 @@ class _AddressPageState extends State<AddressPage> {
                   // color: mainColor,
                 )),
           ),
+          SizedBox(
+            height: 80,
+          )
         ],
       ),
     );

@@ -34,7 +34,8 @@ class PeopleListItem extends StatelessWidget {
               )
             ],
           ),
-        )
+        ),
+        Rating(people.rate)
       ],
     );
   }
