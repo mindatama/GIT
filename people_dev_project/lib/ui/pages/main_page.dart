@@ -34,7 +34,12 @@ class _MainPageState extends State<MainPage> {
                 child: HomePage(),
               ),
               Center(
-                child: Text('Sertificate'),
+                child: IllustrationPage(
+                    title: 'Siapkan Sertifikatmu',
+                    subtitle: 'Unggah Sekarang',
+                    picturePath: 'assets/love_burger.png',
+                    buttonTap1: () {},
+                    buttonTitle1: 'Unggah'),
               ),
               Center(
                 child: Text('Profile'),
