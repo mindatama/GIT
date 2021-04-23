@@ -57,26 +57,26 @@ class _CertificateHistoryPageState extends State<CertificateHistoryPage> {
             ),
           ),
           //body
-          Container(
-            width: double.infinity,
-            color: Colors.white,
-            child: Column(
-              children: [
-                CustomTabBar(
-                  titles: ['In Progress', 'Past Progress'],
-                  selectedIndex: selectedIndex,
-                  onTap: (index) {
-                    setState(() {
-                      selectedIndex = index;
-                    });
-                  },
-                ),
-                SizedBox(
-                  height: 16,
-                ),
-              ],
-            ),
-          )
+          // Container(
+          //   width: double.infinity,
+          //   color: Colors.white,
+          //   child: Column(
+          //     children: [
+          //       CustomTabBar(
+          //         titles: ['In Progress', 'Past Progress'],
+          //         selectedIndex: selectedIndex,
+          //         onTap: (index) {
+          //           setState(() {
+          //             selectedIndex = index;
+          //           });
+          //         },
+          //       ),
+          //       SizedBox(
+          //         height: 16,
+          //       ),
+          //     ],
+          //   ),
+          // )
         ],
       );
     }

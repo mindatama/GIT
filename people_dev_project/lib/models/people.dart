@@ -1,6 +1,7 @@
 part of 'models.dart';
 
 class People extends Equatable {
+  final int id;
   final int nik;
   final String picturePath;
   final String nama;
@@ -14,7 +15,8 @@ class People extends Equatable {
   final String nohp;
 
   People(
-      {this.nik,
+      {this.id,
+      this.nik,
       this.picturePath,
       this.nama,
       this.section,
@@ -28,6 +30,7 @@ class People extends Equatable {
 
   @override
   List<Object> get props => [
+        id,
         nik,
         picturePath,
         nama,
@@ -44,6 +47,7 @@ class People extends Equatable {
 
 List<People> mockPeoples = [
   People(
+      id: 1,
       nik: 10012345,
       picturePath: 'assets/photo.png',
       nama: "Sri Devi",
@@ -56,6 +60,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 2,
       nik: 10012346,
       picturePath: 'assets/photo.png',
       nama: "Reymonth S",
@@ -68,6 +73,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 3,
       nik: 10023543,
       picturePath: 'assets/photo.png',
       nama: "Wijatmoko",
@@ -80,6 +86,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 4,
       nik: 10012347,
       picturePath: 'assets/photo.png',
       nama: "Dwi Suriananda",
@@ -92,6 +99,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 5,
       nik: 10012348,
       picturePath: 'assets/photo.png',
       nama: "Syukur Pamuji",
@@ -104,6 +112,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 6,
       nik: 10012349,
       picturePath: 'assets/photo.png',
       nama: "Fitra Darmawan",
@@ -116,6 +125,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
+      id: 7,
       nik: 10012350,
       picturePath: 'assets/photo.png',
       nama: "Edi Suryani",

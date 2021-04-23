@@ -42,8 +42,8 @@ class _MainPageState extends State<MainPage> {
                     buttonTitle1: 'Unggah'),
               ),
               Center(
-                child: Text('Profile'),
-              ),
+                child: ProfilePage(),
+              )
             ],
           )),
           Align(
