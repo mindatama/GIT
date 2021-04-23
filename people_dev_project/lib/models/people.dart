@@ -44,7 +44,7 @@ class People extends Equatable {
 
 List<People> mockPeoples = [
   People(
-      nik: 10023542,
+      nik: 10012345,
       picturePath: 'assets/photo.png',
       nama: "Sri Devi",
       section: "IT",
@@ -56,7 +56,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
-      nik: 10023542,
+      nik: 10012346,
       picturePath: 'assets/photo.png',
       nama: "Reymonth S",
       section: "IT",
@@ -80,7 +80,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
-      nik: 10023123,
+      nik: 10012347,
       picturePath: 'assets/photo.png',
       nama: "Dwi Suriananda",
       section: "IT",
@@ -92,7 +92,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
-      nik: 10023321,
+      nik: 10012348,
       picturePath: 'assets/photo.png',
       nama: "Syukur Pamuji",
       section: "IT",
@@ -104,7 +104,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
-      nik: 10023544,
+      nik: 10012349,
       picturePath: 'assets/photo.png',
       nama: "Fitra Darmawan",
       section: "IT",
@@ -116,7 +116,7 @@ List<People> mockPeoples = [
       alamat: 'semarang',
       nohp: '08123455677'),
   People(
-      nik: 10023542,
+      nik: 10012350,
       picturePath: 'assets/photo.png',
       nama: "Edi Suryani",
       section: "IT",
