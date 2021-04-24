@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 
 import 'ui/pages/pages.dart';
 
+//tambah comment untuk tambah commit github 24 april
+
 void main() {
   runApp(Myapp());
 }

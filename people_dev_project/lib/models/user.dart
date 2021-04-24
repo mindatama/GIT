@@ -32,5 +32,5 @@ User mockUser = User(
     city: 'semarang',
     houseNumber: '1234',
     phoneNumber: '08123456789',
-    email: 'a@b.c',
+    email: 'info@mindatama.com',
     picturePath: 'assets/photo.png');

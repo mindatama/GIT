@@ -57,7 +57,7 @@ class _ProfilePageState extends State<ProfilePage> {
               child: Column(
                 children: [
                   CustomTabBar(
-                    titles: ["Account", "FoodMarket"],
+                    titles: ["Account", "Sertifikat"],
                     selectedIndex: selectedIndex,
                     onTap: (index) {
                       setState(() {
@@ -70,9 +70,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   Column(
                     children: ((selectedIndex == 0)
-                            ? ['Edit Profile', 'Home Address']
+                            ? ['Detail Account']
                             : [
-                                'Rate App',
+                                'Detail Sertifikat',
                               ])
                         .map((e) => Padding(
                               padding: EdgeInsets.only(
