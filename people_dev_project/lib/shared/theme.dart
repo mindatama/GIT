@@ -10,3 +10,4 @@ TextStyle blackFontStyle16 = GoogleFonts.poppins()
 TextStyle blackFontStyle14 =
     GoogleFonts.poppins().copyWith(color: Colors.black);
 const double defaultMargin = 24;
+TextStyle mainFontStyle = GoogleFonts.poppins().copyWith(color: mainColor);

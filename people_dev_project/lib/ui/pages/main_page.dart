@@ -12,6 +12,37 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Material(
+          // color: mainColor,
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('Development'),
+              ),
+              ListTile(
+                title: Text('Upload Tugas'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: Text('Assignment'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              )
+            ],
+          ),
+        ),
+      ),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        iconTheme: IconThemeData(color: mainColor),
+        title: Text('BUMA Tabang Project', style: mainFontStyle.copyWith()),
+      ),
       body: Stack(
         children: [
           Container(
