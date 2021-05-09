@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Text('Development'),
+                child: Text('People Development Program BUMA Tabang'),
               ),
               ListTile(
                 title: Text('Upload Tugas'),

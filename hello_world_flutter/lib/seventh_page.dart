@@ -7,7 +7,7 @@ class SeventhPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ChangeNotifierProvider<ApplicationColor>(cd..cdcdcdcdcdc
+      home: ChangeNotifierProvider<ApplicationColor>(
         child: Scaffold(
           appBar: AppBar(
             title: Text(
